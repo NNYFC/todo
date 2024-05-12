@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #dfdfdf ;
+}
+.login-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 440px;
+    height: 480px;
+    padding: 30px;
+
+}
+.login-header {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.login-header header{
+    color: #333;
+    font-size: 40px;
+    font-weight: 600;
+}
+.input-box {
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+}
+.input-field{
+    width: 100%;
+    height: 60px;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    border: none;
+}
+::placeholder{
+    font-weight: 500;
+    color: #222;
+}
+button{
+    
+    color:white;
+    background-color: red;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border: 1px solid rgb(176, 143, 143);
+    border-radius: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: space-around;
+    margin-top: 20px;
+   justify-content: space-around;
+}
+a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.sign-up{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sign-up a{
+    text-decoration: underline;
+    color: blue;
+}
+   
