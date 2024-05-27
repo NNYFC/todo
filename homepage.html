@@ -6,70 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home</title>
   <meta name="description" content="">
+  <meta name="key" content="todo">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="icon" href="/" sizes="any">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
-  <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
   <link rel="stylesheet" href="homepage.css">
 </head>
 
 <body>
 <section>
+  <!-- Navbar START -->
   <nav>
    
     <section class="section_links">
         <ul class="tabs">
          <li><a href="">List Todo</a></li>
           <li><a data-bs-toggle="modal" data-bs-target="#exampleModal" id="openModalBtn" href="">Add Todo</a></li>
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Add new Todo</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form id="addElementForm">
-                    <div class="mb-3">
-                      <label for="recipient-name" id="todoName" class="col-form-label">Todo name:</label>
-                      <input type="text" class="form-control" id="recipient-name">
-                    </div>
-                    <div class="mb-3">
-                      <label for="message-text" id="todoDescription" class="col-form-label">Todo description:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div> <div class="mb-3">
-                      <label for="message-text" id="todoDate" class="col-form-label">date:</label>
-                      <textarea class="form-control" id="message-text"></textarea>
-                    </div>
-                    <label for="message-text" id="todoStatus" class="col-form-label">status:</label>
-                    <textarea class="form-control" id="message-text"></textarea>
-                  </div>
-                 
-              
-        
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" id="submitBtn"  class="btn btn-primary">Add </button>
-                </div>
-              </div>
-            </div>
-          </div>
         <div class="btn">
           <button><a href="login.html">log-out</a></button> 
         </div> 
   </nav>
+  <!-- /Navbar END -->
 
   <table class="table table-striped table-hover">
     <tr>
@@ -79,12 +43,12 @@
       <th>Status</th>
     </tr>
     <tr>
-      <td>HTML 5 review</td>
-      <td>This consist of ...</td>
-      <td>2024-05-15</td>
-      <td>Done</td>
+      <td id="name">HTML 5 review</td>
+      <td id="description">This consist of ...</td>
+      <td id="date">2024-05-15</td>
+      <td id="status">Done</td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td>CSS3 review</td>
       <td>This consist of ...</td>
       <td>2024-05-15</td>
@@ -95,46 +59,42 @@
       <td>This consist of ...</td>
       <td>2024-05-15</td>
       <td>Pending</td>
-    </tr>
-
-    <tr>
-      <td>Page responsiveness</td>
-      <td>This consist of ...</td>
-      <td>2024-05-15</td>
-      <td>Undone</td>
-    </tr>
-    <tr>
-      <td>GIT review</td>
-      <td>This consist of ...</td>
-      <td>2024-05-15</td>
-      <td>Undone</td>
-    </tr>
-    
-    <tr>
-      <td>Mysql review</td>
-      <td>This consist of ...</td>
-      <td>2024-05-15</td>
-      <td>Undone</td>
-    </tr>
-    
+    </tr> -->
   </table>
-<div class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+  <img src="" alt="">
+<!-- Modal START -->
+  <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Add Todo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="addElementForm">
+            <div class="mb-3">
+              <label for="recipient-name" id="todoName1" class="col-form-label">Name:</label>
+              <input type="text" class="form-control" id="todoName">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" id="todoDescription1" class="col-form-label">Description:</label>
+              <textarea class="form-control" id="todoDescription"></textarea>
+            </div> <div class="mb-3">
+              <label for="message-text" id="todoDate1" class="col-form-label">date:</label>
+              <input type="datetime-local" class="form-control" id="todoDate">
+            </div>
+            <!-- <label for="message-text" id="todoStatus" class="col-form-label">status:</label>
+            <input type="text" class="form-control" id="recipient-name"> -->
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="addTodo()">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
+  <!-- /Modal END -->
 
 </section>
 
