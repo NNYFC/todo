@@ -10,7 +10,13 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #dfdfdf ;
+    background:#576031 ;
+}
+header {
+    cursor: pointer;
+    font-size: 30px;
+    
+    font-weight: 500;
 }
 .login-box {
     display: flex;
@@ -86,4 +92,6 @@ a {
     text-decoration: underline;
     color: blue;
 }
-   
+   #resultText {
+    text-align: center;
+   }
