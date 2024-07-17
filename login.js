@@ -1,5 +1,5 @@
 var resultText = document.getElementById("resultText");
-resultText.innerHTML = "Please fill in your information";
+resultText.innerHTML = "Enter your email to sign-up for this app";
 
 
 function submitFunction(){
